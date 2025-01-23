@@ -15,7 +15,7 @@ const page = () => {
   }, [isAuth]);
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex justify-center items-center min-h-screen flex-col">
       <h1 className="text-4xl font-bold">Wellcome to your Profile</h1>
       {user && (
         <>
