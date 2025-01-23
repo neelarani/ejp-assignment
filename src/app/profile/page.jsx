@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { UserData } from '../context/UserProvider';
 import { redirect } from 'next/navigation';
 import Swal from 'sweetalert2';
+import Link from 'next/link';
 
 const page = () => {
   const { user, isAuth } = UserData();
@@ -24,6 +25,10 @@ const page = () => {
           <p>{user.given_name}</p>
         </>
       )}
+
+      <Link href={'/'} className="bg-blue-600 px-4 py-1 text-white">
+        Back to Home
+      </Link>
     </div>
   );
 };
