@@ -18,7 +18,9 @@ const Navbar = () => {
 
       <div className="flex">
         {user ? (
-          <LogoutLink>Log out</LogoutLink>
+          <LogoutLink className="bg-blue-600 px-4 py-1 text-white">
+            Log out
+          </LogoutLink>
         ) : (
           <>
             <LoginLink className="mr-3 border border-blue-500 px-4 py-1">
