@@ -15,10 +15,8 @@ const page = () => {
   }, [isAuth]);
 
   return (
-    <div>
-      <h1 className="text-4xl font-bold text-center">
-        Wellcome to your Profile
-      </h1>
+    <div className="flex justify-center items-center min-h-screen">
+      <h1 className="text-4xl font-bold">Wellcome to your Profile</h1>
       {user && (
         <>
           <img className="rounded-full w-16 h-16" src={user.picture} alt="" />

@@ -12,7 +12,7 @@ const Navbar = () => {
   const { user, isAuth } = UserData();
 
   return (
-    <div className="flex gap-4 justify-center items-center sticky top-0 z-10">
+    <div className="flex gap-10 justify-center items-center sticky top-0 z-10 bg-gray-300 p-4">
       <p>Home</p>
       <Link href={'/profile'}>Profile</Link>
 
@@ -21,8 +21,12 @@ const Navbar = () => {
           <LogoutLink>Log out</LogoutLink>
         ) : (
           <>
-            <LoginLink>Sign in</LoginLink>
-            <RegisterLink>Sign up</RegisterLink>
+            <LoginLink className="mr-3 border border-blue-500 px-4 py-1">
+              Sign-in
+            </LoginLink>
+            <RegisterLink className="bg-blue-600 px-4 py-1 text-white">
+              Sign-up
+            </RegisterLink>
           </>
         )}
       </div>
